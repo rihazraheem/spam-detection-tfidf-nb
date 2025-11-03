@@ -1,2 +1,13 @@
 # SMS-Spam-Detection-Using-Machine-Learning
-A machine learning approach to detect spam in SMS using vectorizers (TF-IDF, Count, Hashing) and classifiers (One-vs-Rest, SGD, Passive-Aggressive, Ridge). Achieves 98.8% accuracy with One-vs-Rest + TF-IDF. Implemented in Python with dataset from UCI ML repository.
+A simple SMS spam detection project using TF-IDF vectorization and a Multinomial Naive Bayes classifier.  
+Includes data preprocessing, model training and evaluation
+
+## Project overview
+
+This project demonstrates a classic text classification pipeline:
+
+1. Load and inspect SMS dataset (`spam.csv`).
+2. Preprocess text: lowercase, remove punctuation, remove stopwords.
+3. Convert text to numeric features using TF-IDF.
+4. Train a `MultinomialNB` classifier.
+5. Evaluate using accuracy, precision, recall and confusion matrix.
